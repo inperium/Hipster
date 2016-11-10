@@ -36,7 +36,13 @@ public class HipsterPanel extends JPanel
 	}
 	private void setupLayout()
 	{
-		
+		baseLayout.putConstraint(SpringLayout.EAST, wordsLabel, -265, SpringLayout.EAST, this);
+		baseLayout.putConstraint(SpringLayout.NORTH, myButton, -5, SpringLayout.NORTH, wordsLabel);
+		baseLayout.putConstraint(SpringLayout.WEST, myButton, 6, SpringLayout.EAST, wordsLabel);
+		baseLayout.putConstraint(SpringLayout.SOUTH, wordsLabel, -28, SpringLayout.NORTH, dropDown);
+		baseLayout.putConstraint(SpringLayout.NORTH, dropDown, 159, SpringLayout.NORTH, this);
+		baseLayout.putConstraint(SpringLayout.WEST, dropDown, 136, SpringLayout.WEST, this);
+		baseLayout.putConstraint(SpringLayout.EAST, dropDown, -142, SpringLayout.EAST, this);
 	}
 	private void setupListeners()
 	{
