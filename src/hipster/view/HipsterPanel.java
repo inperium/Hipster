@@ -1,9 +1,8 @@
 package hipster.view;
 
 import java.awt.Color;
-
+import java.awt.event.*;
 import javax.swing.*;
-
 import hipster.controller.HipsterController;
 
 public class HipsterPanel extends JPanel
@@ -46,6 +45,13 @@ public class HipsterPanel extends JPanel
 	}
 	private void setupListeners()
 	{
-		
+		dropDown.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent selection)
+			{
+				String selectedText = baseController.getWords()[dropDown.getSelectedIndex()];
+				wordsLabel.setText(selectedText);
+			}
+		});
 	}
 }
