@@ -14,6 +14,12 @@ public class HipsterController
 	{
 		thirdlevelHipster();
 		hipsters= new Hipster[6];
+		
+		for(int index = 0; index < hipsters.length; index++)
+		{
+			hipsters[index] = new Hipster("Hipster #" + index);
+		}
+		
 		appFrame = new HipsterFrame(this);
 	}
 	

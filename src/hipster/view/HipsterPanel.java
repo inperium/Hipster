@@ -19,7 +19,7 @@ public class HipsterPanel extends JPanel
 		myButton = new JButton("Click Here");
 		wordsLabel = new JLabel("Words");
 		baseLayout = new SpringLayout();
-		dropDown = new JComboBox(baseController.getWords());
+		dropDown = new JComboBox(baseController.getHipsters());
 		
 		setupPanel();
 		setupLayout();
@@ -49,7 +49,7 @@ public class HipsterPanel extends JPanel
 		{
 			public void actionPerformed(ActionEvent selection)
 			{
-				String selectedText = baseController.getWords()[dropDown.getSelectedIndex()];
+				String selectedText = baseController.getHipsters()[dropDown.getSelectedIndex()].toString();
 				wordsLabel.setText(selectedText);
 			}
 		});
