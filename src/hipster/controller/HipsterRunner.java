@@ -5,7 +5,7 @@ public class HipsterRunner
 
 	public static void main(String[] args)
 	{
-		HipsterController app = new HipsterController();
+		HipsterAppController app = new HipsterAppController();
 		app.start();
 	}
 }

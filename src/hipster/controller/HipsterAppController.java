@@ -3,14 +3,14 @@ package hipster.controller;
 import hipster.model.Hipster;
 import hipster.view.HipsterFrame;
 
-public class HipsterController
+public class HipsterAppController
 {
 	private HipsterFrame appFrame;
 	private int [] numbers;
 	private String [] words = {"This ","is the ", "second hipster ", "level: ","initialization ", "list."};
 	private Hipster [] hipsters;
 			
-	public HipsterController()
+	public HipsterAppController()
 	{
 		thirdlevelHipster();
 		

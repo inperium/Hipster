@@ -5,17 +5,17 @@ import java.awt.event.*;
 
 import javax.swing.*;
 
-import hipster.controller.HipsterController;
+import hipster.controller.HipsterAppController;
 
 public class HipsterPanel extends JPanel
 {
-	private HipsterController baseController;
+	private HipsterAppController baseController;
 	private JButton myButton;
 	private JComboBox dropDown;
 	private JLabel wordsLabel;
 	private SpringLayout baseLayout;
 	
-	public HipsterPanel(HipsterController baseController)
+	public HipsterPanel(HipsterAppController baseController)
 	{
 		this.baseController = baseController;
 		myButton = new JButton("Click Here");

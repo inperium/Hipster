@@ -1,16 +1,16 @@
 package hipster.view;
 
 import javax.swing.*;
-import hipster.controller.HipsterController;
+import hipster.controller.HipsterAppController;
 import java.awt.Dimension;
 
 public class HipsterFrame extends JFrame
 {
 
-	private HipsterController baseController;
+	private HipsterAppController baseController;
 	private HipsterPanel basePanel;
 	
-	public HipsterFrame(HipsterController baseController)
+	public HipsterFrame(HipsterAppController baseController)
 	{
 		super();
 		this.baseController = baseController;
